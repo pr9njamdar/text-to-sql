@@ -123,8 +123,7 @@ if uploaded_file and submit:
             
             # Get the SQL query from the Gemini model
             response = get_gemini_response(question, formatted_schema_info)
-            st.subheader("Generated SQL Query:")
-            st.code(response, language='sql')
+           
 
             # Validate and correct the SQL query with the actual schema
             corrected_query = validate_sql_query(response, schema_info)
