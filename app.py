@@ -9,7 +9,7 @@ from sqlalchemy.exc import SQLAlchemyError
 # Load environment variables
 load_dotenv()
 
-# Configure Gemini API key
+# Configure Gemini API key from the enviroment variable
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Function to load Google Gemini Model and provide SQL queries as a response
