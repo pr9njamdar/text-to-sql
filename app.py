@@ -17,7 +17,7 @@ def get_gemini_response(question, schema_info):
     # Build a more detailed prompt with schema information
     prompt = f"""
     You are an expert in converting English questions to SQL query.
-    The SQL database has the following tables and columns:
+    The SQLlite database has the following tables and columns:
     
     {schema_info}
     
